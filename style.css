@@ -477,14 +477,20 @@
       .certs-grid { grid-template-columns: 1fr; }
     }
    .project-img {
+     height: 180px;
+     background: linear-gradient(145deg, #1a2a3a, #0f1a24);
      display: flex;
      align-items: center;
      justify-content: center;
-     height: 150px;
+     border-bottom: 1px solid #2a2a2a;
+     padding: 20px;
    }
    
    .project-img img {
-     max-width: 100%;
-     max-height: 100%;
+     max-height: 120px;
      object-fit: contain;
+     background: white;
+     padding: 10px;
+     border-radius: 10px;
    }
+
