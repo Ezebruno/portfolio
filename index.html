@@ -3,194 +3,208 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ezequiel Bruno · Full Stack Developer</title>
-  <!-- Font Awesome 6 (free) para iconos -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>Ezequiel Bruno · Desarrollador Full Stack & Analista de Sistemas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="png" href="img/18356710.png">
+  <link rel="icon" type="image/png" href="img/EB.png">
 </head>
 <body>
-  <div class="container">
-    <div class="top-signature">
-      <span class="name">Ezequiel Bruno</span>
-      <span class="role">Full Stack Developer</span>
+
+  <!-- CURSOR -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#inicio" class="nav-logo">EB<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto" class="nav-cta">Contactar</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
     </div>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#sobre-mi" class="mobile-link">Sobre mí</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#experiencia" class="mobile-link">Experiencia</a></li>
+      <li><a href="#proyectos" class="mobile-link">Proyectos</a></li>
+      <li><a href="#contacto" class="mobile-link">Contactar</a></li>
+    </ul>
   </div>
 
   <main>
-    <!-- HERO con impacto directo (sección Inicio) -->
-    <section id="inicio">
-      <div class="container hero-content">
-        <div class="greeting">Hola, soy</div>
-        <h1>Ezequiel Bruno</h1>
-        <div class="role">Full Stack Developer</div>
-        <div class="tagline">Creo aplicaciones web modernas</div>
-        <div class="hero-buttons">
-          <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
-          <a href="#contacto" class="btn btn-outline">Contactar</a>
+
+    <!-- HERO -->
+    <section id="inicio" class="hero">
+      <div class="hero-bg">
+        <div class="grid-overlay"></div>
+        <div class="glow glow-1"></div>
+        <div class="glow glow-2"></div>
+      </div>
+      <div class="hero-inner container">
+        <div class="hero-badge reveal">
+          <span class="badge-dot"></span>
+          <span>Disponible para trabajar</span>
+        </div>
+        <h1 class="hero-name reveal">
+          <span class="line">Ezequiel</span>
+          <span class="line accent">Bruno</span>
+        </h1>
+        <div class="hero-roles reveal">
+          <span class="role-tag">Python</span>
+          <span class="role-sep">/</span>
+          <span class="role-tag">AI Developer</span>
+          <span class="role-sep">/</span>
+          <span class="role-tag">Computer Vision</span>
+          <span class="role-sep">/</span>
+          <span class="role-tag">Full Stack</span>
+        </div>
+        <p class="hero-desc reveal">
+          Desarrollo soluciones web e inteligentes que resuelven problemas reales, combinando software, APIs e inteligencia artificial.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#proyectos" class="btn-main">Ver proyectos <i class="fas fa-arrow-right"></i></a>
+          <a href="#contacto" class="btn-ghost">Contactar</a>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="stat">
+            <span class="stat-num">2+</span>
+            <span class="stat-label">años de experiencia</span>
+          </div>
+          <div class="stat-div"></div>
+          <div class="stat">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">proyectos entregados</span>
+          </div>
+          <div class="stat-div"></div>
+          <div class="stat">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">certificaciones</span>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- SOBRE MÍ -->
-    <section id="sobre-mi">
+    <section id="sobre-mi" class="section">
       <div class="container">
-        <h2>Sobre mí</h2>
-        <div class="about-text">
-          <p>Estudiante de Ingeniería en Informática (3° año) con orientación en análisis de sistemas y desarrollo web. Experiencia en frontend y backend usando tecnologías modernas. Interesado en crear soluciones digitales eficientes y participar en proyectos de transformación digital.</p>
-          <p style="margin-top: 20px;"><i class="fas fa-code" style="color: #2d7ee9; margin-right: 8px;"></i> UML, APIs REST, arquitectura cliente-servidor. Motivado por crecer profesionalmente.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- HABILIDADES TÉCNICAS -->
-    <section id="skills">
-      <div class="container">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-category">
-            <h3><i class="fas fa-code"></i> Lenguajes</h3>
-            <div class="skill-tags">
-              <span class="skill-tag"><i class="fab fa-html5"></i> HTML</span>
-              <span class="skill-tag"><i class="fab fa-css3-alt"></i> CSS</span>
-              <span class="skill-tag"><i class="fab fa-js"></i> JavaScript</span>
-              <span class="skill-tag"><i class="fab fa-java"></i> Java</span>
-              <span class="skill-tag"><i class="fab fa-php"></i> PHP</span>
-              <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
-              <span class="skill-tag"><i class="fas fa-code"></i> C++</span>
-            </div>
+        <div class="section-label reveal">// 01 sobre mí</div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <h2>Desarrollador Full Stack<br>con enfoque en IA</h2>
+            <p>Soy estudiante avanzado de Ingeniería en Informática (UNNOBA) y desarrollador con experiencia en la creación de soluciones web completas, desde el análisis de requerimientos hasta su implementación.</p>
+            <p>Trabajo desarrollando sistemas full stack, integrando APIs y diseñando arquitecturas escalables orientadas a resolver problemas reales de negocio.</p>
+            <p>Actualmente participo en un proyecto en UNNOBA enfocado en el análisis automatizado de imágenes de resonancia magnética cardíaca, aplicando inteligencia artificial y Computer Vision en el sector salud.</p>
+            <p>Mi enfoque combina lo técnico con lo funcional: entiendo el problema, propongo soluciones eficientes y entrego productos sólidos, mantenibles y listos para producción.</p>
           </div>
-          <div class="skill-category">
-            <h3><i class="fas fa-cubes"></i> Frameworks</h3>
-            <div class="skill-tags">
-              <span class="skill-tag"><i class="fab fa-react"></i> React</span>
-              <span class="skill-tag"><i class="fab fa-angular"></i> Angular</span>
-              <span class="skill-tag"><i class="fab fa-python"></i> Django</span>
+          <div class="about-cards reveal">
+            <div class="about-card">
+              <i class="fas fa-brain"></i>
+              <h4>IA & ML</h4>
+              <p>Computer Vision, modelos de análisis de imágenes médicas, automatización inteligente.</p>
             </div>
-          </div>
-          <div class="skill-category">
-            <h3><i class="fas fa-database"></i> Bases de datos</h3>
-            <div class="skill-tags">
-              <span class="skill-tag"><i class="fas fa-database"></i> MySQL</span>
-              <span class="skill-tag"><i class="fas fa-database"></i> PostgreSQL</span>
-              <span class="skill-tag"><i class="fas fa-database"></i> MariaDB</span>
+            <div class="about-card">
+              <i class="fas fa-globe"></i>
+              <h4>Full Stack Web</h4>
+              <p>React, Django, APIs REST, bases de datos relacionales, arquitecturas cliente-servidor.</p>
             </div>
-          </div>
-          <div class="skill-category">
-            <h3><i class="fas fa-tools"></i> Herramientas</h3>
-            <div class="skill-tags">
-              <span class="skill-tag"><i class="fab fa-git-alt"></i> Git</span>
-              <span class="skill-tag"><i class="fab fa-github"></i> GitHub</span>
-              <span class="skill-tag"><i class="fas fa-code"></i> VS Code</span>
+            <div class="about-card">
+              <i class="fas fa-shield-alt"></i>
+              <h4>Ciberseguridad</h4>
+              <p>Fundamentos de seguridad aplicados al desarrollo de software seguro.</p>
             </div>
-          </div>
-          <div class="skill-category">
-            <h3><i class="fas fa-brain"></i> Otros</h3>
-            <div class="skill-tags">
-              <span class="skill-tag">UML</span>
-              <span class="skill-tag">APIs REST</span>
-              <span class="skill-tag">Testing funcional</span>
+            <div class="about-card">
+              <i class="fas fa-users"></i>
+              <h4>Trabajo en equipo</h4>
+              <p>Experiencia trabajando en proyectos reales con clientes y equipos multidisciplinarios.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PROYECTOS -->
-    <section id="proyectos">
+    <!-- SKILLS -->
+    <section id="skills" class="section section-dark">
       <div class="container">
-        <h2>Proyectos</h2>
-        <div class="projects-grid">
-
-        <!-- Proyecto 1 -->
-        <div class="project-card">
-          <div class="project-img">
-            <img src="img/icon.png" alt="Logo Gym" />
-          </div>
-      
-          <div class="project-info">
-            <h3>Distribuidora Celta</h3>
-            <p>
-              Plataforma de gestión para una distribuidora que permite administrar productos,
-              pedidos y operaciones internas. Incluye versión web y aplicación de escritorio
-              construida con Electron.
-            </p>
-      
-            <div class="project-tech">
-              <span><i class="fab fa-html5"></i> HTML</span>
-              <span><i class="fab fa-css3-alt"></i> CSS</span>
-              <span><i class="fab fa-js"></i> JavaScript</span>
-              <span><i class="fab fa-node-js"></i> Node.js</span>
+        <div class="section-label reveal">// 02 habilidades</div>
+        <h2 class="section-title reveal">Stack tecnológico</h2>
+        <div class="skills-layout">
+          <div class="skill-block reveal">
+            <div class="skill-block-header">
+              <span class="skill-icon"><i class="fas fa-code"></i></span>
+              <h3>Lenguajes</h3>
             </div>
-      
-            <div class="project-btns">
-              <a href="https://distribuidora-celta.vercel.app/" target="_blank" class="btn btn-primary">Ver demo</a>
-              <a href="https://github.com/Ezebruno/DistribuidoraCelta" target="_blank" class="btn btn-outline">Ver código</a>
+            <div class="skill-pills">
+              <span class="pill pill-hot"><i class="fab fa-python"></i> Python</span>
+              <span class="pill"><i class="fab fa-js"></i> JavaScript</span>
+              <span class="pill"><i class="fab fa-html5"></i> HTML</span>
+              <span class="pill"><i class="fab fa-css3-alt"></i> CSS</span>
+              <span class="pill"><i class="fab fa-java"></i> Java</span>
+              <span class="pill"><i class="fab fa-php"></i> PHP</span>
+              <span class="pill"><i class="fas fa-code"></i> C++</span>
             </div>
           </div>
-        </div> 
-      
-        <!-- Proyecto 2 -->
-        <div class="project-card">
-          <div class="project-img">
-            <img src="img/favicon-fv.png" alt="Logo Gym" />
-          </div>
-      
-          <div class="project-info">
-            <h3>FitVerse</h3>
-      
-            <span class="demo-badge">Demo: admin / admin123</span>
-      
-            <p>
-              Aplicación web completa para gestión de gimnasio. Incluye sistema de reservas, dashboard de usuarios, tienda integrada y panel de administración. Implementa modo demo inteligente para funcionar sin backend en producción.
-            </p>
-      
-            <div class="project-tech">
-              <span><i class="fab fa-react"></i> React</span>
-              <span><i class="fab fa-js"></i> JavaScript</span>
-              <span><i class="fab fa-node"></i> Node.js</span>
-              <span><i class="fas fa-database"></i> JSON DB</span>
+          <div class="skill-block reveal">
+            <div class="skill-block-header">
+              <span class="skill-icon"><i class="fas fa-brain"></i></span>
+              <h3>IA & Data</h3>
             </div>
-      
-            <div class="project-btns">
-              <a href="https://fit-verse-gules.vercel.app/login" target="_blank" class="btn btn-primary">
-                Ver demo
-              </a>
-      
-              <a href="https://github.com/Ezebruno/FitVerse" target="_blank" class="btn btn-outline">
-                Ver código
-              </a>
+            <div class="skill-pills">
+              <span class="pill pill-hot">Computer Vision</span>
+              <span class="pill pill-hot">Machine Learning</span>
+              <span class="pill">OpenCV</span>
+              <span class="pill">Análisis de imágenes</span>
+              <span class="pill">Automatización IA</span>
             </div>
           </div>
-        </div>
-      
-      </div> 
-
-    <!-- CONTACTO -->
-    <section id="contacto">
-      <div class="container">
-        <h2>Contacto</h2>
-        <div class="contact-grid">
-          <div class="contact-form">
-            <form action="#" method="post">
-              <input type="text" placeholder="Nombre" required>
-              <input type="email" placeholder="Email" required>
-              <textarea placeholder="Mensaje" required></textarea>
-              <button type="submit" class="btn btn-primary">Enviar mensaje</button>
-            </form>
+          <div class="skill-block reveal">
+            <div class="skill-block-header">
+              <span class="skill-icon"><i class="fas fa-cubes"></i></span>
+              <h3>Frameworks</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="pill"><i class="fab fa-react"></i> React</span>
+              <span class="pill"><i class="fab fa-angular"></i> Angular</span>
+              <span class="pill"><i class="fab fa-python"></i> Django</span>
+              <span class="pill">Node.js</span>
+              <span class="pill">Electron</span>
+            </div>
           </div>
-          <div class="contact-info">
-            <div class="contact-info-item">
-              <i class="fas fa-envelope"></i>
-              <a href="mailto:ezeemi00@gmail.com">ezeemi00@gmail.com</a>
+          <div class="skill-block reveal">
+            <div class="skill-block-header">
+              <span class="skill-icon"><i class="fas fa-database"></i></span>
+              <h3>Bases de datos</h3>
             </div>
-            <div class="contact-info-item">
-              <i class="fab fa-linkedin"></i>
-              <a href="#">www.linkedin.com/in/ezequiel-bruno-dev</a>
+            <div class="skill-pills">
+              <span class="pill"><i class="fas fa-database"></i> MySQL</span>
+              <span class="pill"><i class="fas fa-database"></i> PostgreSQL</span>
+              <span class="pill"><i class="fas fa-database"></i> MariaDB</span>
             </div>
-            <div class="contact-info-item">
-              <i class="fas fa-phone-alt"></i>
-              <span>+54 3462-612989</span>
+          </div>
+          <div class="skill-block reveal">
+            <div class="skill-block-header">
+              <span class="skill-icon"><i class="fas fa-tools"></i></span>
+              <h3>Herramientas</h3>
+            </div>
+            <div class="skill-pills">
+              <span class="pill"><i class="fab fa-git-alt"></i> Git</span>
+              <span class="pill"><i class="fab fa-github"></i> GitHub</span>
+              <span class="pill">APIs REST</span>
+              <span class="pill">UML</span>
+              <span class="pill">Testing funcional</span>
             </div>
           </div>
         </div>
@@ -198,86 +212,264 @@
     </section>
 
     <!-- EXPERIENCIA -->
-    <section id="experiencia">
+    <section id="experiencia" class="section">
       <div class="container">
-        <h2>Experiencia</h2>
-        <div class="exp-item">
-          <h3>Desarrollador Web Jr</h3>
-          <span class="empresa">VectraWeb · 2025 – Actualidad</span>
-          <ul class="exp-tasks">
-            <li><i class="fas fa-chevron-right"></i> Desarrollo de sistemas web y soluciones digitales</li>
-            <li><i class="fas fa-chevron-right"></i> Análisis de requerimientos de clientes</li>
-            <li><i class="fas fa-chevron-right"></i> Implementación de sistemas de gestión</li>
-            <li><i class="fas fa-chevron-right"></i> Diseño de interfaces responsivas</li>
-            <li><i class="fas fa-chevron-right"></i> Mantenimiento y soporte técnico</li>
-          </ul>
+        <div class="section-label reveal">// 03 experiencia</div>
+        <h2 class="section-title reveal">Trayectoria profesional</h2>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-marker">
+              <div class="marker-dot active"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="exp-header">
+                <div>
+                  <h3>Desarrollador de Software e Inteligencia Artificial</h3>
+                  <div class="exp-company">
+                    <span class="company-name">UNNOBA</span>
+                    <span class="exp-type">Contrato temporal · Presencial</span>
+                  </div>
+                </div>
+                <div class="exp-date">
+                  <span class="date-badge active">feb. 2026 – actualidad</span>
+                </div>
+              </div>
+              <p class="exp-desc">Diseño y desarrollo de una aplicación para análisis automatizado de imágenes de resonancia magnética cardíaca (RMC) utilizando inteligencia artificial. Proyecto de alto impacto en el sector salud, trabajando en equipo con investigadores y especialistas médicos.</p>
+              <div class="exp-tags">
+                <span>Python</span>
+                <span>Computer Vision</span>
+                <span>Inteligencia Artificial</span>
+                <span>Análisis de imágenes médicas</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-marker">
+              <div class="marker-dot"></div>
+              <div class="marker-line"></div>
+            </div>
+            <div class="timeline-content">
+              <div class="exp-header">
+                <div>
+                  <h3>Analista y Desarrollador Web Jr</h3>
+                  <div class="exp-company">
+                    <span class="company-name">VectraWeb</span>
+                    <span class="exp-type">Freelance · Híbrido</span>
+                  </div>
+                </div>
+                <div class="exp-date">
+                  <span class="date-badge active">feb. 2025 – actualidad</span>
+                </div>
+              </div>
+              <p class="exp-desc">Desarrollo de soluciones digitales completas para clientes empresariales: relevamiento de requerimientos, diseño de arquitectura, implementación y entrega. Gestión de sistemas web y aplicaciones de escritorio.</p>
+              <div class="exp-tags">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>Análisis de requerimientos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Educación dentro de experiencia -->
+        <div class="edu-block reveal">
+          <div class="edu-header">
+            <i class="fas fa-graduation-cap"></i>
+            <h3>Educación</h3>
+          </div>
+          <div class="edu-grid">
+            <div class="edu-item">
+              <h4>Ingeniería en Informática</h4>
+              <span class="edu-school">Universidad Nacional del Noroeste de la Provincia de Buenos Aires</span>
+              <span class="edu-date">mar. 2019 – en curso</span>
+            </div>
+            <div class="edu-item">
+              <h4>Bachiller en Ciencias Sociales</h4>
+              <span class="edu-school">Escuela Secundaria Ganaderos de San Martin Nº 212</span>
+              <span class="edu-date">mar. 2014 – dic. 2018</span>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- EDUCACIÓN -->
-    <section id="educacion">
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="section section-dark">
       <div class="container">
-        <h2>Educación</h2>
-        <div class="edu-item">
-          <h3>Ingeniería en Informática</h3>
-          <div class="lugar">Universidad Nacional del Noroeste de la Provincia de Buenos Aires</div>
-          <p style="color:#aaa;">Actualmente cursando 3° año - presente</p>
+        <div class="section-label reveal">// 04 proyectos</div>
+        <h2 class="section-title reveal">Trabajo reciente</h2>
+        <div class="projects-grid">
+
+          <!-- Proyecto IA destacado -->
+          <div class="project-card project-featured reveal">
+            <div class="project-badge">Destacado · IA</div>
+            <div class="project-visual ai-visual">
+              <div class="ai-grid">
+                <div class="ai-scan"></div>
+                <div class="ai-nodes">
+                  <div class="node n1"></div>
+                  <div class="node n2"></div>
+                  <div class="node n3"></div>
+                  <div class="node n4"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3>Análisis de RMC con IA</h3>
+              <p>Aplicación para análisis automatizado de imágenes de resonancia magnética cardíaca. Utiliza Computer Vision para detectar patrones y asistir en diagnósticos médicos.</p>
+              <div class="project-stack">
+                <span>Python</span><span>Computer Vision</span><span>IA</span><span>Análisis de imágenes</span>
+              </div>
+              <div class="project-links">
+                <span class="link-disabled"><i class="fas fa-lock"></i> Proyecto institucional</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- FitVerse -->
+          <div class="project-card reveal">
+            <div class="project-visual gym-visual">
+              <i class="fas fa-dumbbell"></i>
+            </div>
+            <div class="project-body">
+              <h3>FitVerse</h3>
+              <p>App web completa para gestión de gimnasio. Sistema de reservas, dashboard de usuarios, tienda integrada y panel de administración con modo demo.</p>
+              <div class="project-stack">
+                <span>React</span><span>JavaScript</span><span>Node.js</span>
+              </div>
+              <div class="project-links">
+                <a href="https://fit-verse-gules.vercel.app/login" target="_blank" class="proj-btn"><i class="fas fa-external-link-alt"></i> Demo</a>
+                <a href="https://github.com/Ezebruno/FitVerse" target="_blank" class="proj-btn proj-btn-ghost"><i class="fab fa-github"></i> Código</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Distribuidora Celta -->
+          <div class="project-card reveal">
+            <div class="project-visual distrib-visual">
+              <i class="fas fa-boxes"></i>
+            </div>
+            <div class="project-body">
+              <h3>Distribuidora Celta</h3>
+              <p>Plataforma de gestión para distribuidora. Administración de productos, pedidos y operaciones internas. Incluye versión web y app de escritorio con Electron.</p>
+              <div class="project-stack">
+                <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span><span>Electron</span>
+              </div>
+              <div class="project-links">
+                <a href="https://distribuidora-celta.vercel.app/" target="_blank" class="proj-btn"><i class="fas fa-external-link-alt"></i> Demo</a>
+                <a href="https://github.com/Ezebruno/DistribuidoraCelta" target="_blank" class="proj-btn proj-btn-ghost"><i class="fab fa-github"></i> Código</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
+    <!-- CERTIFICACIONES -->
+    <section id="certificaciones" class="section">
+      <div class="container">
+        <div class="section-label reveal">// 05 certificaciones</div>
+        <h2 class="section-title reveal">Licencias y certificaciones</h2>
+        <div class="certs-row">
+          <div class="cert-item reveal">
+            <div class="cert-icon"><i class="fas fa-shield-alt"></i></div>
+            <div class="cert-info">
+              <h4>Ciberseguridad</h4>
+              <span class="cert-issuer">Coderhouse</span>
+              <span class="cert-date">may. 2025</span>
+            </div>
+            <a href="https://pub.coderhouse.com/certificates/ab280b48-dfbb-4e8c-8366-45c1045af393?v=1" target="_blank" class="cert-link">Ver <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="cert-item reveal">
+            <div class="cert-icon"><i class="fas fa-code"></i></div>
+            <div class="cert-info">
+              <h4>HTML y CSS — Argentina Programa 4.0</h4>
+              <span class="cert-issuer">ITMaster Academy</span>
+              <span class="cert-date">sept. 2023</span>
+            </div>
+            <a href="https://www.itmaster.app/certificates?id=ITMAP402023EQVMFKTKPTFZSOP" target="_blank" class="cert-link">Ver <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="cert-item reveal">
+            <div class="cert-icon"><i class="fas fa-desktop"></i></div>
+            <div class="cert-info">
+              <h4>Programación Front-End — Argentina Programa 4.0</h4>
+              <span class="cert-issuer">ITMaster Academy</span>
+              <span class="cert-date">oct. 2023</span>
+            </div>
+            <a href="https://www.itmaster.app/certificates?id=ITMAP402023MFCVFRQFAATQRTI" target="_blank" class="cert-link">Ver <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section section-dark">
+      <div class="container">
+        <div class="section-label reveal">// 06 contacto</div>
+        <div class="contact-layout">
+          <div class="contact-left reveal">
+            <h2>¿Trabajamos<br>juntos?</h2>
+            <p>Estoy disponible para proyectos freelance, posiciones remotas o presenciales en desarrollo web, Python y aplicaciones con inteligencia artificial.</p>
+            <div class="contact-links">
+              <a href="mailto:ezeemi00@gmail.com" class="contact-link">
+                <i class="fas fa-envelope"></i>
+                <span>ezeemi00@gmail.com</span>
+              </a>
+              <a href="https://www.linkedin.com/in/ezequiel-bruno-dev" target="_blank" class="contact-link">
+                <i class="fab fa-linkedin"></i>
+                <span>linkedin.com/in/ezequiel-bruno-dev</span>
+              </a>
+              <a href="https://github.com/Ezebruno" target="_blank" class="contact-link">
+                <i class="fab fa-github"></i>
+                <span>github.com/Ezebruno</span>
+              </a>
+              <div class="contact-link no-link">
+                <i class="fas fa-phone"></i>
+                <span>+54 3462-612989</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-right reveal">
+            <form class="contact-form" id="contactForm">
+              <div class="form-group">
+                <label>Nombre</label>
+                <input type="text" placeholder="Tu nombre" required>
+              </div>
+              <div class="form-group">
+                <label>Email</label>
+                <input type="email" placeholder="tu@email.com" required>
+              </div>
+              <div class="form-group">
+                <label>Mensaje</label>
+                <textarea placeholder="Contame sobre tu proyecto..." rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn-main full-width">
+                Enviar mensaje <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <!-- CERTIFICACIONES -->
-    <section id="certificaciones">
-      <div class="container">
-        <h2>Licencias y certificaciones</h2>
-        <div class="certs-grid">
-          <!-- Ciberseguridad - Coderhouse -->
-          <div class="cert-card">
-            <h3>Ciberseguridad</h3>
-            <div class="issuer">Coderhouse</div>
-            <div class="date"><i class="far fa-calendar-alt"></i> Expedición: may. 2025</div>
-            <div class="cert-id">ID: ab280b48-dfbb-4e8c-8366-45c1045af393</div>
-            <div class="cert-skills">
-              <span><i class="fas fa-check-circle"></i> Resolución de problemas a distancia</span>
-            </div>
-            <a href="https://pub.coderhouse.com/certificates/ab280b48-dfbb-4e8c-8366-45c1045af393?v=1" class="btn btn-small btn-outline" target="_blank">Mostrar credencial</a>
-          </div>
-          <!-- HTML y CSS - Argentina Programa 4.0 -->
-          <div class="cert-card">
-            <h3>HTML y CSS - Argentina Programa 4.0</h3>
-            <div class="issuer">ITMaster Academy</div>
-            <div class="date"><i class="far fa-calendar-alt"></i> Expedición: sept. 2023</div>
-            <div class="cert-id">ID: ITMAP402023EQVMFTKPTFZSOP</div>
-            <div class="cert-skills">
-              <span><i class="fas fa-check-circle"></i> Resolución de problemas a distancia</span>
-            </div>
-            <a href="https://www.itmaster.app/certificates?id=ITMAP402023EQVMFKTKPTFZSOP" class="btn btn-small btn-outline">Mostrar credencial</a>
-          </div>
-          <!-- Programación Front-End - Argentina Programa 4.0 -->
-          <div class="cert-card">
-            <h3>Programación Front-End - Argentina Programa 4.0</h3>
-            <div class="issuer">ITMaster Academy</div>
-            <div class="date"><i class="far fa-calendar-alt"></i> Expedición: oct. 2023</div>
-            <div class="cert-id">ID: ITMAP402023MFCVFRQFAATQRTI</div>
-            <div class="cert-skills">
-              <span><i class="fas fa-check-circle"></i> Resolución de problemas a distancia</span>
-            </div>
-            <a href="https://www.itmaster.app/certificates?id=ITMAP402023MFCVFRQFAATQRTI" class="btn btn-small btn-outline">Mostrar credencial</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
   <footer>
-    <div class="container">
-      <p>© 2026 Ezequiel Bruno — Full Stack Developer</p>
+    <div class="container footer-inner">
+      <span class="footer-logo">EB<span class="dot">.</span></span>
+      <span>© 2026 Ezequiel Bruno</span>
+      <div class="footer-links">
+        <a href="https://github.com/Ezebruno" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/ezequiel-bruno-dev" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
     </div>
   </footer>
 
   <script src="script.js"></script>
 
-</body>
+  </body>
 </html>
-
